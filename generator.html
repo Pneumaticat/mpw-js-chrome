@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Master Password &mdash; Secure your life, forget your passwords.</title>
+        <meta content="Master Password is an ingenious password solution that makes your passwords truly impossible to lose." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css?2" />
+	</head>
+    <body>
+        <header>
+            <span id="error"></span>
+		</header>
+        <section id="identity" class="active"><form action="#">
+            <h1>Enter Identity</h1>
+            <p>
+                <input id="userName" type="text" placeholder="Your Full Name" /><br>
+                <input id="masterPassword" type="password" placeholder="Your Master Password" /><br>
+                <input type="submit" value="⏎" /><br>
+                <input type="image" src="img/spinner.svg" />
+			</p>
+		</form></section>
+		
+        <section id="site">
+            <h1>Enter Site</h1>
+            <p>
+                <input id="siteName" type="text" placeholder="Site Name (eg. apple.com)" /><br>
+                <span class="small">
+                    <input id="siteCounter" type="number" placeholder="Site Counter" min="1" max="100" value="1" class="half" />
+                    <select id="siteType" class="half">
+                        <option value="pin">PIN</option>
+                        <option value="short">Short</option>
+                        <option value="basic">Basic</option>
+                        <option value="medium">Medium</option>
+                        <option value="long" selected>Long</option>
+                        <option value="maximum">Maximum</option>
+                        <option value="name">Name</option>
+                        <option value="phrase">Phrase</option>
+					</select>
+				</span><br>
+                <h2 id="sitePassword" title="Your password is ..."></h2><br>
+                <input id="logout" type="submit" value="⎋" />
+                <input type="image" src="img/spinner.svg" />
+			</p>
+		</section>
+		
+        <footer>
+			<p>This page was made possible thanks to <a href="https://tomthorogood.co.uk/" title="Tom Thorogood">tmthrgd</a>'s <a href="https://github.com/tmthrgd/mpw-js">mpw-js</a>.<br>
+				<em><a href="http://masterpasswordapp.com">Master Password</a> is a security product and algorithm by <a href="http://www.lhunath.com" title="Maarten Billemont">Maarten Billemont</a>, <a href="http://www.lyndir.com">Lyndir</a> (&copy; 2011-2014).</em><br>
+			Usage implies agreement with our <a href="http://masterpasswordapp.com/privacy.html">privacy policy and disclaimer</a>.</p>
+			
+			<p>Packaged into a Chrome Extension by Kevin Liu.</p>
+		</footer>
+		
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/dependencies.js?3"></script>
+        <script src="js/main.js?3"></script>
+	</body>
+</html>

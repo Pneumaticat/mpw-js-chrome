@@ -1,0 +1,93 @@
+/**** BASE STYLE ****/
+html {
+    background-color:   #161616;
+    background-size:    16px 16px;
+	
+	font-size:          16px;
+
+    width:              350px;
+    height:             350px;
+    padding:            0;
+    margin:             5px;
+}
+body {
+    width:              100%;
+    min-height:         100%;
+    padding:            0;
+    margin:             0;
+    clear:              both;
+
+    font-family:        'Exo 2',
+                        "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+                        Arial, "Lucida Grande", sans-serif; 
+    font-weight:        300;
+    color:              #DDD;
+    text-align:         center;
+}
+h1, h2, h3, h4 {
+    margin:             0;
+}
+a {
+    font: inherit;
+    color: inherit;
+}
+input, select {
+    background:         rgba(0, 0, 0, .3);
+    border:             1px solid #000;
+    border-radius:      4px;
+
+    width:              67%;
+    height:             2em;
+    margin:             1ex 0;
+
+    font:               inherit;
+	font-size:          16px;
+    color:              inherit;
+    text-align:         center;
+}
+input:focus, select:focus {
+    outline:            none;
+    box-shadow:         0 0 50px #333;
+}
+input.half, select.half {
+    width:              33%;
+}
+input[type="submit"], input[type="image"] {
+    background:         transparent;
+    border:             none;
+
+    width:              auto;
+}
+input[type="submit"] {
+    display:            inline;
+}
+#identity.working input[type="submit"] {
+    display:            none;
+}
+input[type="image"] {
+    display:            none;
+}
+#identity.working input[type="image"] {
+    display:            inline;
+}
+#error {
+    color:              red;
+}
+header, section, footer {
+    overflow:           hidden;
+    clear:              both;
+}
+
+
+/**** LAYOUT ****/
+section {
+    display:            none;
+
+    
+}
+section.active {
+    display:            block;
+}
+.small {
+    font-size:          0.5em;
+}
