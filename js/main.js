@@ -97,6 +97,12 @@ $(function() {
 			
 			updateSite();
 		});
+        document.getElementById("copyPassword").addEventListener("click", function() {
+            document.getElementById("sitePassword").select();
+            document.execCommand("copy");
+            
+        }, false);
+        
         return false;
     });
     $('#site input, #site select').on('change input keyup', function() {
